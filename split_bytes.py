@@ -19,7 +19,7 @@ def split_bytes(path, size):
         os.mkdir(name)
         counter = 0
         while part:
-            write_bytes(f'{name}/{str(counter)}', part)
+            write_bytes(f'{name}/{str(counter)}{ext}', part)
             counter = counter + 1
             part = reader.read(size)
     return
